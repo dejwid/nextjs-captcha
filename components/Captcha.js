@@ -29,6 +29,7 @@ export default function Captcha({onChange,captchaKey}) {
       <div className="captcha-images">
         {imageLocations.map((imageUrl,index) => (
           <div
+            key={index}
             onClick={() => toggleIndex(index)}
             className={selectedIndexes.includes(index) ? 'selected' : ''}>
             <img src={imageUrl} alt=""/>
