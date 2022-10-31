@@ -1,0 +1,66 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+img{
+  max-width: 100%;
+}
+body{
+  padding: 30px;
+}
+main{
+  width: 300px;
+  margin: 0 auto;
+}
+input, button{
+  padding: 5px;
+  margin: 10px 0;
+}
+input{
+  width: 100%;
+}
+button{
+  padding: 5px 30px;
+}
+.captcha-images{
+  background: #fff;
+  width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:2px;
+  align-items: center;
+}
+.captcha-images > div{
+}
+.captcha-images > div.selected{
+  position:relative;
+}
+.captcha-images > div.selected:after{
+  position:absolute;
+  content: "";
+  inset:0;
+  background-color: rgba(100,100,255,0.6);
+}
